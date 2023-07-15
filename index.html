@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title> JS Piano </title>
+   <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div id="piano">
+    <header>
+      <h6>PIANO</h6>
+      <div class="checkboxandlabel">
+        <label for="volume" > Volume </label>
+        <input id="volume-slider" type="range" min="0" max="1" value="0.5" step="0.01">
+      </div>
+      <div class="checkboxandlabel">
+        <label for="show-keys"> Show Keys<span id="checkbox-background"></span></label>
+        <input id="show-keys" name="show-keys" type="checkbox">
+      </div>
+      
+    </header> 
+
+    <div class="keys">
+      
+      <div class="black-keys">
+          <div class="key black-key" data-key="w"><span> </span> </div>
+          <div class="key black-key" data-key="e"><span> </span> </div>
+          <div class="key black-key" data-key="t"><span> </span> </div>
+          <div class="key black-key" data-key="z"><span> </span> </div>
+          <div class="key black-key" data-key="u"><span> </span></div>
+          <div class="key black-key" data-key="o"><span> </span> </div>
+          <div class="key black-key" data-key="p"><span> </span> </div>
+          <div class="key black-key" data-key="ü"><span> </span> </div>
+         
+      </div>
+
+      <div class="white-keys">
+        <div class="key white-key" data-key="a"> <span> </span> </div>
+        <div class="key white-key" data-key="s"> <span> </span> </div>
+        <div class="key white-key" data-key="d"> <span></span> </div>
+        <div class="key white-key" data-key="f"> <span> </span> </div>
+        <div class="key white-key" data-key="g"> <span> </span> </div>
+        <div class="key white-key" data-key="h"> <span> </span> </div>
+        <div class="key white-key" data-key="j"> <span> </span> </div>
+        <div class="key white-key" data-key="k"> <span> </span> </div>
+        <div class="key white-key" data-key="l"> <span> </span> </div>
+        <div class="key white-key" data-key="ö"> <span> </span> </div>
+        <div class="key white-key" data-key="ä"> <span> </span> </div>
+        
+       
+      </div>
+
+    </div>
+
+  </div>
+
+
+    <script src="index.js"> </script>
+</body>
+
+
+</html>
