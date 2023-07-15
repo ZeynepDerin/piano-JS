@@ -41,9 +41,9 @@ function playWithKeyboard(e){
       
     }
 
-    pressedPianoKey.setAttribute("id", "active-key")
+    pressedPianoKey.classList.add("active-key")
     setTimeout(()=>{
-    pressedPianoKey.removeAttribute("id")
+    pressedPianoKey.classList.remove("active-key")
     },100)
        /*
   OR
