@@ -2,20 +2,28 @@ const pianoKeys = document.querySelectorAll(".key")
 const showKeys = document.getElementById("show-keys")
 const volumeSlider = document.getElementById("volume-slider")
 
-function playSound(soundUrl){
+function playSound(soundUrl){    // makes the sound play and enables the volume change
   const audioEl = new Audio(soundUrl)
   audioEl.volume = volumeSlider.value
   audioEl.play()
 }
 
-pianoKeys.forEach((pianoKey, i )=> {
-  const number = i < 10 ? '0'+ (i+1) : (i+1)
+pianoKeys.forEach((pianoKey, i )=> {     // attributes sound to each key
+  const number = i < 9 ? '0'+ (i+1) : (i+1)
   const soundUrl = `24-piano-keys/key${number}.mp3`
   pianoKey.addEventListener("click", ()=> playSound(soundUrl))
 })
 
-document.addEventListener("keydown", playWithKeyboard)
+
+volumeSlider.addEventListener("input", showVolumeRange)
 showKeys.addEventListener("change", addKeys)
+document.addEventListener("keydown", playWithKeyboard)
+
+function showVolumeRange(){
+  const percent = (this.value-this.min)/(this.max-this.min)*100
+  const gradient = `linear-gradient(to right, black ${percent}%, rgb(233, 233, 233) ${percent}%)`;
+  this.style.background = gradient;
+}
 
 function addKeys(e){
   if(e.target.checked){
@@ -60,5 +68,8 @@ function playWithKeyboard(e){
 */
 
   }
+   
+  
+
    
   
