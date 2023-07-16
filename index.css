@@ -121,6 +121,7 @@ header{
   margin: 0;
   padding: 0 15px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 header h6{
@@ -135,7 +136,7 @@ header h6{
   align-items: center;
   margin: 0;
   padding: 0;
-  position: relative;
+  
 }
 
 #show-keys,
@@ -162,7 +163,7 @@ header h6{
   border-radius: 10px;
   position: absolute;
   background-color: gray;
- right: -7px;
+ right: 23px;
   top: 8px;
   
 }
