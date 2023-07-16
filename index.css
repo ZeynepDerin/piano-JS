@@ -135,12 +135,8 @@ header h6{
   align-items: center;
   margin: 0;
   padding: 0;
-}
-
-.checkboxandlabel label {
   position: relative;
 }
-
 
 #show-keys,
 #volume-slider {
@@ -167,7 +163,7 @@ header h6{
   position: absolute;
   background-color: gray;
  right: -7px;
-  top: -1px;
+  top: 8px;
   
 }
 
@@ -175,7 +171,7 @@ header h6{
   position: absolute;
   background-color: whitesmoke;
   right: 7px;
-  top: -1px;
+  top: 8px;
   
 }
 
