@@ -19,14 +19,9 @@ body {
 
 .key{
   position: relative;
-
 }
 
 .key:active {
-  background-color: lightgray;
-}
-
-#active-key{
   background-color: lightgray;
 }
 
@@ -180,5 +175,64 @@ header h6{
   top: 8px;
   
 }
+
+.active-key{
+  background-color: lightgray;
+}
+
+
+#volume-slider {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 150px;
+  height: 8px;
+  border-radius: 5px;
+  background: linear-gradient(to right, black 50%, rgb(233, 233, 233) 50%);
+}
+
+/* Input Thumb */
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgb(233, 233, 233);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  
+}
+
+#volume-slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgb(233, 233, 233);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+}
+
+#volume-slider::-ms-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: rgb(233, 233, 233);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+}
+
+#volume-slider::-webkit-slider-thumb:hover {
+  background: white;
+}
+
+#volume-slider::-moz-range-thumb:hover {
+  background: white;
+}
+#volume-slider::-ms-thumb:hover {
+  background: white;
+}
+
+
 
 
